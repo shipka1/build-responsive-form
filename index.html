@@ -8,56 +8,63 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-   
-    <section>   
-        <h2>Learn Web Design, Coding & Much More</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex fugit, reiciendis, porro magnam laborum possimus incidunt modi aliquid beatae, amet a explicabo quae neque cumque rem illum aspernatur ducimus! Veniam?</p>
+    
+    <section>
+        <div class="box-container">
+            <h2>Learn Web Design, Coding & Much More</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex fugit, reiciendis, porro magnam laborum possimus incidunt modi aliquid beatae, amet a explicabo quae neque cumque rem illum aspernatur ducimus! Veniam?</p>
+        </div>   
+        <form action="#" method="POST">
+            <fieldset>
+                <p>Try it free for 7 days starting at $25 a month</p>
+                <h3>Field of Interest</h3>
+                <div class="flex-container">
+                    <!-- radio button options here, they require a name attribute to connect -->
+                    <div>
+                        <input type="radio" id="html" name="area-interest" value="HTML">
+                        <label for="html">HTML</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="css" name="area-interest" value="CSS">
+                        <label for="css">Styling a Website</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="javascript" name="area-interest" value="JavaScript">
+                        <label for="javascript">JavaScript</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="uiux" name="area-interest" value="UX UI">
+                        <label for="uiux">UI/UX</label>
+                    </div>
+                </div>
+        
+                    <!-- all inputs require a label that is connected to the input -->
+                <div>
+                    <label for="f-name">First name</label>
+                    <input type="text" id="f-name" required autofocus>
+                </div>
+                <div>
+                    <label for="l-name">Last name</label>
+                    <input type="text" id="l-name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" required placeholder="Email Required">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="text" id="password" required autocomplete="off" minlength="Passwords must be 10 Characters long">
+                </div>
+                <div>
+                    <label for="checkbox">By signing up you agree to the <a href="#">Terms of Service</a></label>
+                    <input type="checkbox" id="checkbox" name="agree">
+                </div>
+                <div>
+                    <input type="submit" value="Claim Your Free Trial &#9656;">
+                </div>
+            </fieldset>
+        </form>
     </section>
-
-    <form action="" method="POST">
-        <fieldset>
-            <p>Try it free for 7 days starting at $25 a month</p>
-            <!-- radio button options here, they require a name attribute to connect -->
-            <h3>Field of Interest</h3>
-            <div>
-                <input type="radio" id="html" name="area-interest" value="HTML">
-                <label for="html">HTML</label>
-            </div>
-            <div>
-                <input type="radio" id="css" name="area-interest" value="CSS">
-                <label for="css">CSS</label>
-            </div>
-            <div>
-                <input type="radio" id="javascript" name="area-interest" value="JavaScript">
-                <label for="javascript">JavaScript</label>
-            </div>
-            <div>
-                <input type="radio" id="uiux" name="area-interest" value="UX UI">
-                <label for="uiux">UI/UX</label>
-            </div>
-
-            <!-- all inputs require a label that is connected to the input -->
-            <div>
-                <label for="f-name">First name</label>
-                <input type="text" id="f-name" required autofocus>
-            </div>
-            <div>
-                <label for="l-name">Last name</label>
-                <input type="text" id="l-name" required>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="text" id="email" required placeholder="Email Required">
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="text" id="password" required autocomplete="off" minlength="Passwords must be 10 Characters long">
-            </div>
-            <div>
-                <input type="submit" value="Claim Your Free Trial &#9656;">
-            </div>
-        </fieldset>
-    </form>
 
 </body>
 </html>
